@@ -1,8 +1,7 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * main - Write a program that prints Holberton, followed by a new*
- *
- *
+ * main - Write a program that prints putchat, followed by a new*
  * Return: On success 0.
  */
 int main(void)
