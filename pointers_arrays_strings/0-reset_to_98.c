@@ -1,4 +1,4 @@
-#include "mai.h"
+#include "main.h"
 #include <stdio.h>
 /**
  * reset_to_98 - Takes a pointer to an int and updates
