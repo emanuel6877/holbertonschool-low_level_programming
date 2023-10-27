@@ -1,3 +1,4 @@
+char *_strncat(char *dest, char *src, int n);
 #ifndef FILE_MAIN
 #define FILE_MAIN
 
