@@ -1,24 +1,28 @@
 #include "lists.h"
-#include <stdio.h>
 
 /**
- * listint_len -  function that returns the number of elements in,
- * a linked listint_t list.
- * @h: pointer to the head of linked list.
+ * dlistint_len - Number of ll
  *
- * Format: see example.
- * You are allowed to use printf.
+ * @h: Head
  *
- * Return: number of elements.
+ * Return: Number of elements
  */
 
-size_t listint_len(const listint_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
-	size_t count = 0;
+	unsigned int count = 0;
+	const dlistint_t *list;
 
-	while (h != NULL)
+	list = malloc(sizeof(dlistint_t));
+	list = h;
+
+	if (list == NULL)
 	{
-		h = h->next;
+		return (0);
+	}
+	while (list)
+	{
+		list = list->next;
 		count++;
 	}
 	return (count);
